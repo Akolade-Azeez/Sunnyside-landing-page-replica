@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 95vh;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding-right: 2em;
+}
+button {
+  background-color: white;
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hwb(179 16% 1%);
+  color: white;
+}
+
+.creative {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin: 1.5em;
+  text-transform: uppercase;
+}
+
+.creative img {
+  width: 30px;
+  padding-top: 70px;
+}
+
+.section-2 {
+  display: flex;
+}
+.section2-text {
+  text-align: left;
+  width: 50%;
+  padding: 8em;
+}
+.section2-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section2-text p {
+  margin-bottom: 2rem;
+}
+
+.underline-p {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+.img-section {
+  background-image: url(./images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.section-3 {
+  display: flex;
+}
+
+.img2 {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 50%;
+}
+.section3-text {
+  text-align: left;
+  width: 50%;
+  padding: 8em;
+}
+
+.section-3 h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-3 p {
+  margin-bottom: 2rem;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.section-4 {
+  display: flex;
+}
+.img-part {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+
+  width: 50%;
+  padding: 8em;
+}
+.img-part2 {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+
+  width: 50%;
+  padding: 8em;
+}
+.text {
+  text-align: center;
+  margin-top: 200px;
+  color: hsl(167, 40%, 24%);
+}
+.section-4 h2 {
+  color: hsl(167, 40%, 24%);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.main-testimonials h1 {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.testimonials p {
+  margin-bottom: 20px;
+  color: rgb(175, 174, 174);
+}
+
+.clients {
+  padding: 40px 40px;
+  width: 33%;
+}
+
+.clients img {
+  padding-top: 10px;
+  border-radius: 100%;
+}
+
+.last-section {
+  display: flex;
+}
+.last-section img {
+  width: 25%;
+}
+
+footer {
+  background-color: hsl(169, 77%, 75%);
+  text-align: center;
+  padding: 40px 0px;
+}
+
+footer h1 {
+  font-weight: bold;
+  color: hsl(167, 40%, 40%);
+  padding: 20px;
+  font-size: 50px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  list-style: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: hsl(167, 40%, 40%);
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.icon {
+  gap: 40px;
+  display: flex;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .section-2 {
+    flex-direction: column;
+  }
+  .img-section {
+    width: 100%;
+    height: 50vh;
+  }
+  .section2-text {
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+  }
+
+
+  .section3-text{
+    text-align: center;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  h2{font-size: 20px;
+  }
+  .section-3 {
+    flex-direction: column;
+  }
+  .img2 {
+    width: 100%;
+    height: 50vh;
+  }
+  .section3-text {
+    width: 100%;
+    padding: 2em;
+
+  }
+  .section-4 {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .img-part,
+  .img-part2 {
+    width: 100%;
+    height: 50vh;
+    padding: 2em;
+  }
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .clients {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+    
+  header {
+    background-image: url(./images/mobile/image-header.jpg);
+    height: 70vh;
+  }
+  a {
+    padding-right: 1em;
+    font-size: 14px;
+  }
+}
